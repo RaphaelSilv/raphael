@@ -1,15 +1,12 @@
+baseURL = "https://yourwebsitenamegoeshere.com/"
+languageCode = "The language code for the language the website is written in"
+title = "The website title that is used in each page title, displayed in the browser tab and search results"
 theme = "aether"
 googleAnalytics = "Your google analytics tracking ID - optional"
 disqusShortname = "Your shortname for Disqus - optional"
-baseurl = "http://example.org"
-title = "Raphael | Code Insights"
-author = "RaphaelSilv"
-canonifyurls = true
-paginate = 3
 
 [params]
+brand = "The name that is displayed in the top left of the website, consider it the website name"
+description = "The website's description"
 homeimg = "URL to the image used for the home button at the bottom of each post - optional"
-bgimg = "URL to the image used for the page background - optional"
-description = "A place to share things I've been learning and also tracking my technical development."
 bgimg = "img/ignasi_pattern_s.png"
-brand = "Phrase"
