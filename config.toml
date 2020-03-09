@@ -7,7 +7,7 @@ disqusShortname = "basquiatraphaeu"
 tags = ["Blog", "Personal", "Raphael", "Shell", "Simple", "Code", "Programmer", "Technical", "Github", "UFSC", "C++", "Shell"]
 features = ["Responsive", "Highlight.js", "KaTeX", "Google analytics", "Disqus"]
 min_version = "0.01"
-publishDir = "public"
+publishDir = "docs"
 
 [params]
 brand = "By: Raphael Ramos"
