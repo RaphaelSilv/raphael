@@ -1,20 +1,25 @@
 +++
-title = "About Hugo"
-date = "2014-04-09"
+title = "About Me"
+date = "2020-03-09"
 displayInMenu = true
 displayInList = false
 dropCap = false
 +++
+## currently
 
-Hugo is the **world’s fastest framework for building websites**. It is written in Go.
-
-It makes use of a variety of open source projects including:
-
-* https://github.com/russross/blackfriday
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
-
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
-
+Working on an IoT cryptocurrency project that intends to solve the widespread problem to keep money safe in the crypto world.
+Topics in deal with:
+- C++
+- Git
+- Platformio
+- Embedded devices (ESP32, OrangePI, RapberryPI, etc)
+- Different sorts of sensors (Microphone, Temperature, Accelerometer, etc)
+- Arduino
+- English at the office and writing reports.
+- Linux
+- Continuous Integration
+-  Docker containers
+- Schematics
+- Basic circuit theory
+- Gitlab
+- Clean code

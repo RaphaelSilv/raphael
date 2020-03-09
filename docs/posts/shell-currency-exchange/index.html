@@ -5,7 +5,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Bash | Consuming API exchange &middot; Raphael Ramos | Code Insights</title>
-  <meta name="description" content="Shell currency provide it as simple and fast as any shell --command and faster than any browser loading." />
+  <meta name="description" content="Shell-currency provide you curerncy conversion simple and fast as any shell --command and faster than any browser loading." />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
   
@@ -45,17 +45,7 @@ if (!doNotTrack) {
     </button>
     <ul id="menu" class="hamburger-menu-overlay">
       <li><a href="https://raphaelsilv.github.io/raphael/" class="hamburger-menu-overlay-link">Home</a></li>
-      <li><a href="https://raphaelsilv.github.io/raphael/about/" class="hamburger-menu-overlay-link">About Hugo</a></li>
-      
-      <li><a href="https://raphaelsilv.github.io/raphael/categories/a-complete-introduction/" class="hamburger-menu-overlay-link">A complete introduction</a></li>
-      
-      <li><a href="https://raphaelsilv.github.io/raphael/categories/bash/" class="hamburger-menu-overlay-link">Bash</a></li>
-      
-      <li><a href="https://raphaelsilv.github.io/raphael/categories/cli/" class="hamburger-menu-overlay-link">CLI</a></li>
-      
-      <li><a href="https://raphaelsilv.github.io/raphael/categories/shell/" class="hamburger-menu-overlay-link">Shell</a></li>
-      
-      <li><a href="https://raphaelsilv.github.io/raphael/categories/the-linux-command-line/" class="hamburger-menu-overlay-link">The Linux Command Line</a></li>
+      <li><a href="https://raphaelsilv.github.io/raphael/about/" class="hamburger-menu-overlay-link">About Me</a></li>
       
       
     </ul>
@@ -75,7 +65,7 @@ if (!doNotTrack) {
           <img src="https://raphaelsilv.github.io/raphael/posts/shell-currency-exchange/mdd-coins_hu955e541289d8df80e5ca0739ede440eb_484859_800x0_resize_q75_lanczos.jpg" alt="A bunch of gold euro coins. A bunch of it.">
         </picture>
         
-        <h2 id="shell-currency-exchange">Shell Currency Exchange</h2>
+        <h2 id="shell-currency-exchangehttpsgithubcomraphaelsilvshell-currency-exchange"><a href="https://github.com/RaphaelSilv/shell-currency-exchange">Shell Currency Exchange</a></h2>
 <p>This shell script program aims to be a helpful tool in the daily basis of CLI users. This simple application provides real time currency information through API requisitions.</p>
 <h2 id="requirements">Requirements</h2>
 <p>This project works with <em>http</em> <a href="https://www.currencyconverterapi.com/">requisitions to an external API</a> for each time
@@ -83,7 +73,7 @@ you call the program. You must <a href="https://free.currencyconverterapi.com/fr
 <p>Inside <code>currency.sh</code> you can find the global variable <code>API_KEY</code>.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">declare -r API_KEY<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&lt;MyKey&gt;&#34;</span>
 </code></pre></div><p>Paste the generated key into the quotes.</p>
-<p>Also, make sure you have <a href="https://curl.haxx.se/">curl</a> and [bc](<a href="https://curl.haxx.se/%5D">https://curl.haxx.se/]</a> properly installed. This application
+<p>Also, make sure you have <a href="https://curl.haxx.se/">curl</a> and <a href="https://curl.haxx.se/">bc</a> properly installed. This application
 works through those packages. You can easily try the following commands in your
 shell to install the packages through =apt=:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"> curl --version <span style="color:#f92672">||</span> apt-get install curl<span style="color:#f92672">=</span> and <span style="color:#f92672">=</span>bc --version &gt;/dev/null <span style="color:#f92672">||</span> apt-get install
@@ -106,15 +96,19 @@ date: Sat, <span style="color:#ae81ff">25</span> Jan <span style="color:#ae81ff"
 <span style="color:#f92672">===================================</span>
 </code></pre></div><h4 id="of-course-the-value-may-change-according-to-economical-determinants">Of course the value may change according to economical determinants.</h4>
 <h2 id="help">Help</h2>
-<p>The [[https://free.currencyconverterapi.com/][API]] used support the following currencies:</p>
+<p>The <a href="https://free.currencyconverterapi.com/">API</a> used support the following currencies:</p>
 <p>Each country has one 3 digits character used for requisitions. For instance:
 <code>brl, usd, btc</code> correspond respectively to <strong>American Dollar, Brazilian reais and
 Bitcoin</strong></p>
 <p>You can have more info in <code>curr -h</code></p>
+<h2 id="clone-us-on-github">Clone us on github</h2>
+<p><a href="https://github.com/RaphaelSilv/shell-currency-exchange">RaphaelSilv /shell-currency-exchange</a></p>
+<h2 id="apis-sample-codes">API&rsquo;S sample codes</h2>
+<p>This project was added to the <a href="https://www.currencyconverterapi.com/docs">API&rsquo;s sample codes</a> official documentation.
+Over there you can find other usage examples that would fit better your needs or you can create an usage example that don&rsquo;t already exists and help the community.</p>
 <h2 id="license">License</h2>
 <p>You can use this source code however you like. If necessary, please refer to the
-API&rsquo;s <a href="https://www.currencyconverterapi.com/terms-of-service">Terms of Service</a>. If this was useful in any way please consider fork
-it. If you appreciated the services provided, consider <a href="https://www.currencyconverterapi.com/buy-me-coffee">buying the API maintainer a coffee</a>  as he is the one that has costs with domain, hosting, bandwidth
+API&rsquo;s <a href="https://www.currencyconverterapi.com/terms-of-service">Terms of Service</a>. If you appreciated the services provided, consider <a href="https://www.currencyconverterapi.com/buy-me-coffee">buying the API maintainer a coffee</a>  as he is the one that has costs with domain, hosting, bandwidth
 and, of course, with coffee.</p>
 
       </article>

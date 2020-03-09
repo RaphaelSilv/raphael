@@ -3,12 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://raphaelsilv.github.io/raphael/categories/a-complete-introduction/</loc>
+    <loc>https://raphaelsilv.github.io/raphael/about/</loc>
+    <lastmod>2020-03-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://raphaelsilv.github.io/raphael/tags/a-complete-introduction/</loc>
     <lastmod>2020-03-02T14:33:42-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://raphaelsilv.github.io/raphael/categories/bash/</loc>
+    <loc>https://raphaelsilv.github.io/raphael/tags/bash/</loc>
     <lastmod>2020-03-02T14:33:42-04:00</lastmod>
   </url>
   
@@ -18,12 +23,7 @@
   </url>
   
   <url>
-    <loc>https://raphaelsilv.github.io/raphael/categories/</loc>
-    <lastmod>2020-03-02T14:33:42-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://raphaelsilv.github.io/raphael/categories/cli/</loc>
+    <loc>https://raphaelsilv.github.io/raphael/tags/cli/</loc>
     <lastmod>2020-03-02T14:33:42-04:00</lastmod>
   </url>
   
@@ -33,12 +33,17 @@
   </url>
   
   <url>
-    <loc>https://raphaelsilv.github.io/raphael/categories/shell/</loc>
+    <loc>https://raphaelsilv.github.io/raphael/tags/shell/</loc>
     <lastmod>2020-03-02T14:33:42-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://raphaelsilv.github.io/raphael/categories/the-linux-command-line/</loc>
+    <loc>https://raphaelsilv.github.io/raphael/tags/</loc>
+    <lastmod>2020-03-02T14:33:42-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://raphaelsilv.github.io/raphael/tags/the-linux-command-line/</loc>
     <lastmod>2020-03-02T14:33:42-04:00</lastmod>
   </url>
   
@@ -48,12 +53,7 @@
   </url>
   
   <url>
-    <loc>https://raphaelsilv.github.io/raphael/about/</loc>
-    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://raphaelsilv.github.io/raphael/tags/</loc>
+    <loc>https://raphaelsilv.github.io/raphael/categories/</loc>
   </url>
   
 </urlset>

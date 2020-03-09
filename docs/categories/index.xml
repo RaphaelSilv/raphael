@@ -5,45 +5,9 @@
     <description>Recent content in Categories on Raphael Ramos | Code Insights</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>The language code for the language the website is written in</language>
-    <lastBuildDate>Mon, 02 Mar 2020 14:33:42 -0400</lastBuildDate>
     
         <atom:link href="https://raphaelsilv.github.io/raphael/categories/index.xml" rel="self" type="application/rss+xml" />
     
-    <item>
-      <title>A complete introduction</title>
-      <link>https://raphaelsilv.github.io/raphael/categories/a-complete-introduction/</link>
-      <pubDate>Mon, 02 Mar 2020 14:33:42 -0400</pubDate>
-      
-      <guid>https://raphaelsilv.github.io/raphael/categories/a-complete-introduction/</guid>
-      <description></description>
-    </item><item>
-      <title>Bash</title>
-      <link>https://raphaelsilv.github.io/raphael/categories/bash/</link>
-      <pubDate>Mon, 02 Mar 2020 14:33:42 -0400</pubDate>
-      
-      <guid>https://raphaelsilv.github.io/raphael/categories/bash/</guid>
-      <description></description>
-    </item><item>
-      <title>CLI</title>
-      <link>https://raphaelsilv.github.io/raphael/categories/cli/</link>
-      <pubDate>Mon, 02 Mar 2020 14:33:42 -0400</pubDate>
-      
-      <guid>https://raphaelsilv.github.io/raphael/categories/cli/</guid>
-      <description></description>
-    </item><item>
-      <title>Shell</title>
-      <link>https://raphaelsilv.github.io/raphael/categories/shell/</link>
-      <pubDate>Mon, 02 Mar 2020 14:33:42 -0400</pubDate>
-      
-      <guid>https://raphaelsilv.github.io/raphael/categories/shell/</guid>
-      <description></description>
-    </item><item>
-      <title>The Linux Command Line</title>
-      <link>https://raphaelsilv.github.io/raphael/categories/the-linux-command-line/</link>
-      <pubDate>Mon, 02 Mar 2020 14:33:42 -0400</pubDate>
-      
-      <guid>https://raphaelsilv.github.io/raphael/categories/the-linux-command-line/</guid>
-      <description></description>
-    </item>
+    
   </channel>
 </rss>
