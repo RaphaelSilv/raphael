@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags - Raphael Ramos | Code Insights</title>
-    <link>https://raphaelsilv.github.io/raphael-hugo-pages/tags/</link>
+    <link>https://raphaelsilv.github.io/raphael/tags/</link>
     <description>Recent content in Tags on Raphael Ramos | Code Insights</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>The language code for the language the website is written in</language>
     
-        <atom:link href="https://raphaelsilv.github.io/raphael-hugo-pages/tags/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://raphaelsilv.github.io/raphael/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

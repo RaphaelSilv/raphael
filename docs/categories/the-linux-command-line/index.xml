@@ -1,20 +1,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>The Linux Command Line - Raphael Ramos | Code Insights</title>
-    <link>https://raphaelsilv.github.io/raphael-hugo-pages/categories/the-linux-command-line/</link>
+    <link>https://raphaelsilv.github.io/raphael/categories/the-linux-command-line/</link>
     <description>Recent content in The Linux Command Line on Raphael Ramos | Code Insights</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>The language code for the language the website is written in</language>
     <lastBuildDate>Mon, 02 Mar 2020 14:33:42 -0400</lastBuildDate>
     
-        <atom:link href="https://raphaelsilv.github.io/raphael-hugo-pages/categories/the-linux-command-line/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://raphaelsilv.github.io/raphael/categories/the-linux-command-line/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Bash | Consuming API exchange</title>
-      <link>https://raphaelsilv.github.io/raphael-hugo-pages/posts/shell-currency-exchange/</link>
+      <link>https://raphaelsilv.github.io/raphael/posts/shell-currency-exchange/</link>
       <pubDate>Mon, 02 Mar 2020 14:33:42 -0400</pubDate>
       
-      <guid>https://raphaelsilv.github.io/raphael-hugo-pages/posts/shell-currency-exchange/</guid>
+      <guid>https://raphaelsilv.github.io/raphael/posts/shell-currency-exchange/</guid>
       <description>Shell currency provide it as simple and fast as any shell --command and faster than any browser loading.</description>
     </item>
   </channel>

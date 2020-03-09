@@ -1,4 +1,4 @@
-baseURL = "https://raphaelsilv.github.io/raphael-hugo-pages/"
+baseURL = "https://raphaelsilv.github.io/raphael/"
 languageCode = "The language code for the language the website is written in"
 title = "Raphael Ramos | Code Insights"
 theme = "aether"
