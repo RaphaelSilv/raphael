@@ -1,4 +1,4 @@
-baseURL = "https://yourwebsitenamegoeshere.com/"
+baseURL = "https://raphaelsilv.github.io/raphael-hugo-pages/"
 languageCode = "The language code for the language the website is written in"
 title = "Raphael Ramos | Code Insights"
 theme = "aether"
@@ -7,7 +7,7 @@ disqusShortname = "basquiatraphaeu"
 tags = ["Blog", "Personal", "Raphael", "Shell", "Simple", "Code", "Programmer", "Technical", "Github", "UFSC", "C++", "Shell"]
 features = ["Responsive", "Highlight.js", "KaTeX", "Google analytics", "Disqus"]
 min_version = "0.01"
-publishDir: "public"
+publishDir = "public"
 
 [params]
 brand = "By: Raphael Ramos"
