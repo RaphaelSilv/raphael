@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="The language code for the language the website is written in" dir="ltr">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Bash | Consuming API exchange &middot; Raphael Ramos | Code Insights</title>
+  <meta name="description" content="Shell currency provide it as simple and fast as any shell --command and faster than any browser loading." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  
+  
+  
+  
+  
+  <link href="https://yourwebsitenamegoeshere.com/css/concated.min.css" rel="stylesheet">
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'Your google analytics tracking ID - optional', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+  <style>
+    body {
+      background: #ecedef url("https://yourwebsitenamegoeshere.com/img/ignasi_pattern_s.png") repeat;
+    }
+  </style>
+</head>
+
+  <body class="single-body">
+    <nav class="nav-bar side-padding">
+  <h1 class="nav-header"><a href="https://yourwebsitenamegoeshere.com/" class="nav-text">By: Raphael Ramos</a></h1>
+  <div class="hamburger-menu">
+    <button onclick="hamburgerMenuPressed.call(this)" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+      <span></span>
+      <span></span>
+    </button>
+    <ul id="menu" class="hamburger-menu-overlay">
+      <li><a href="https://yourwebsitenamegoeshere.com/" class="hamburger-menu-overlay-link">Home</a></li>
+      <li><a href="https://yourwebsitenamegoeshere.com/about/" class="hamburger-menu-overlay-link">About Hugo</a></li>
+      
+      <li><a href="https://yourwebsitenamegoeshere.com/categories/a-complete-introduction/" class="hamburger-menu-overlay-link">A complete introduction</a></li>
+      
+      <li><a href="https://yourwebsitenamegoeshere.com/categories/bash/" class="hamburger-menu-overlay-link">Bash</a></li>
+      
+      <li><a href="https://yourwebsitenamegoeshere.com/categories/cli/" class="hamburger-menu-overlay-link">CLI</a></li>
+      
+      <li><a href="https://yourwebsitenamegoeshere.com/categories/shell/" class="hamburger-menu-overlay-link">Shell</a></li>
+      
+      <li><a href="https://yourwebsitenamegoeshere.com/categories/the-linux-command-line/" class="hamburger-menu-overlay-link">The Linux Command Line</a></li>
+      
+      
+    </ul>
+  </div>
+</nav>
+
+    <main class="content side-text-padding">
+      <article class="post dropcase">
+        <header class="post-header">
+          <h1 class="post-title">Bash | Consuming API exchange</h1>
+          <p class="post-date">Posted <time datetime="2020-03-02">Mar 2, 2020</time></p>
+        </header>
+        <picture class="post-figure">
+          
+          
+          <source srcset="https://yourwebsitenamegoeshere.com/posts/shell-currency-exchange/mdd-coins_hu955e541289d8df80e5ca0739ede440eb_484859_800x0_resize_q75_lanczos.jpg">
+          <img src="https://yourwebsitenamegoeshere.com/posts/shell-currency-exchange/mdd-coins_hu955e541289d8df80e5ca0739ede440eb_484859_800x0_resize_q75_lanczos.jpg" alt="A bunch of gold euro coins. A bunch of it.">
+        </picture>
+        
+        <h2 id="shell-currency-exchange">Shell Currency Exchange</h2>
+<p>This shell script program aims to be a helpful tool in the daily basis of CLI users. This simple application provides real time currency information through API requisitions.</p>
+<h2 id="requirements">Requirements</h2>
+<p>This project works with <em>http</em> <a href="https://www.currencyconverterapi.com/">requisitions to an external API</a> for each time
+you call the program. You must <a href="https://free.currencyconverterapi.com/free-api-key">generate your own key</a> to be able to realize requisitions.</p>
+<p>Inside <code>currency.sh</code> you can find the global variable <code>API_KEY</code>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">declare -r API_KEY<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&lt;MyKey&gt;&#34;</span>
+</code></pre></div><p>Paste the generated key into the quotes.</p>
+<p>Also, make sure you have <a href="https://curl.haxx.se/">curl</a> and [bc](<a href="https://curl.haxx.se/%5D">https://curl.haxx.se/]</a> properly installed. This application
+works through those packages. You can easily try the following commands in your
+shell to install the packages through =apt=:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"> curl --version <span style="color:#f92672">||</span> apt-get install curl<span style="color:#f92672">=</span> and <span style="color:#f92672">=</span>bc --version &gt;/dev/null <span style="color:#f92672">||</span> apt-get install
+</code></pre></div><h2 id="how-to-use-it">How to Use it</h2>
+<p>Open a terminal or command prompt, paste the following command to it:
+<code>git clone https://github.com/RaphaelSilv/shell-currency.git</code></p>
+<p>Inside =shell-currency= you can find =currency.sh= make sure to provide
+execution rights through  <a href="https://linux.die.net/man/1/chmod">chmod</a> command for it.</p>
+<p>The last step is to add the absolute path to the file above to your environment
+variables. If you use =zsh= or =bash= open your terminal, go to home and open =.bashrc or .zrsch=
+with you favorite text editor and create an <a href="https://shapeshed.com/unix-alias/">alias</a> as the following:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"> alias &lt;MyAlias&gt;<span style="color:#f92672">=</span>&lt;path&gt;currency.sh
+</code></pre></div><p>Close the terminal and open it again.</p>
+<p>Now the try following command: =curr -f usd -t brl -a 1=</p>
+<p>should produce an output similarly like so:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#f92672">===================================</span>
+date: Sat, <span style="color:#ae81ff">25</span> Jan <span style="color:#ae81ff">2020</span> 17:36:31 GMT
+
+<span style="color:#ae81ff">1</span> USD <span style="color:#f92672">=</span> 4.181404 BRL
+<span style="color:#f92672">===================================</span>
+</code></pre></div><h4 id="of-course-the-value-may-change-according-to-economical-determinants">Of course the value may change according to economical determinants.</h4>
+<h2 id="help">Help</h2>
+<p>The [[https://free.currencyconverterapi.com/][API]] used support the following currencies:</p>
+<p>Each country has one 3 digits character used for requisitions. For instance:
+<code>brl, usd, btc</code> correspond respectively to <strong>American Dollar, Brazilian reais and
+Bitcoin</strong></p>
+<p>You can have more info in <code>curr -h</code></p>
+<h2 id="license">License</h2>
+<p>You can use this source code however you like. If necessary, please refer to the
+API&rsquo;s <a href="https://www.currencyconverterapi.com/terms-of-service">Terms of Service</a>. If this was useful in any way please consider fork
+it. If you appreciated the services provided, consider <a href="https://www.currencyconverterapi.com/buy-me-coffee">buying the API maintainer a coffee</a>  as he is the one that has costs with domain, hosting, bandwidth
+and, of course, with coffee.</p>
+
+      </article>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "basquiatraphaeu" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </main>
+    <nav class="end-nav side-padding">
+      
+      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
+  href="https://yourwebsitenamegoeshere.com/" class="card home-card" style="background-image: url( https://yourwebsitenamegoeshere.com/img/fancy-pants.jpg )" rel="bookmark" >
+  Home
+</a>
+    </nav>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+  
+  <script src="https://yourwebsitenamegoeshere.com/js/core.min.js"></script>
+
+  </body>
+</html>

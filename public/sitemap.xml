@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://yourwebsitenamegoeshere.com/categories/a-complete-introduction/</loc>
+    <lastmod>2020-03-02T14:33:42-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yourwebsitenamegoeshere.com/categories/bash/</loc>
+    <lastmod>2020-03-02T14:33:42-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yourwebsitenamegoeshere.com/posts/shell-currency-exchange/</loc>
+    <lastmod>2020-03-02T14:33:42-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yourwebsitenamegoeshere.com/categories/</loc>
+    <lastmod>2020-03-02T14:33:42-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yourwebsitenamegoeshere.com/categories/cli/</loc>
+    <lastmod>2020-03-02T14:33:42-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yourwebsitenamegoeshere.com/posts/</loc>
+    <lastmod>2020-03-02T14:33:42-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yourwebsitenamegoeshere.com/categories/shell/</loc>
+    <lastmod>2020-03-02T14:33:42-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yourwebsitenamegoeshere.com/categories/the-linux-command-line/</loc>
+    <lastmod>2020-03-02T14:33:42-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yourwebsitenamegoeshere.com/</loc>
+    <lastmod>2018-04-27T09:46:15-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yourwebsitenamegoeshere.com/about/</loc>
+    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://yourwebsitenamegoeshere.com/tags/</loc>
+  </url>
+  
+</urlset>

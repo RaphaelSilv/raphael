@@ -1,8 +1,8 @@
 +++
 title = "(Hu)go Template Primer"
 displayInMenu = false
-displayInList = true
-draft = false
+displayInList = false
+draft = true
 tags = [
     "go",
     "golang",

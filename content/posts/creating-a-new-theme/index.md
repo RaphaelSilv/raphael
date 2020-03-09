@@ -4,8 +4,8 @@ date: 2014-09-28
 title: Creating a New Theme
 dropCap: true
 displayInMenu: false
-displayInList: true
-draft: false
+displayInList: false
+draft: true
 resources:
 - name: featuredImage
   src: "nyc.jpg"

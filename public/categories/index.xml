@@ -1,0 +1,49 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories - Raphael Ramos | Code Insights</title>
+    <link>https://yourwebsitenamegoeshere.com/categories/</link>
+    <description>Recent content in Categories on Raphael Ramos | Code Insights</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>The language code for the language the website is written in</language>
+    <lastBuildDate>Mon, 02 Mar 2020 14:33:42 -0400</lastBuildDate>
+    
+        <atom:link href="https://yourwebsitenamegoeshere.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>A complete introduction</title>
+      <link>https://yourwebsitenamegoeshere.com/categories/a-complete-introduction/</link>
+      <pubDate>Mon, 02 Mar 2020 14:33:42 -0400</pubDate>
+      
+      <guid>https://yourwebsitenamegoeshere.com/categories/a-complete-introduction/</guid>
+      <description></description>
+    </item><item>
+      <title>Bash</title>
+      <link>https://yourwebsitenamegoeshere.com/categories/bash/</link>
+      <pubDate>Mon, 02 Mar 2020 14:33:42 -0400</pubDate>
+      
+      <guid>https://yourwebsitenamegoeshere.com/categories/bash/</guid>
+      <description></description>
+    </item><item>
+      <title>CLI</title>
+      <link>https://yourwebsitenamegoeshere.com/categories/cli/</link>
+      <pubDate>Mon, 02 Mar 2020 14:33:42 -0400</pubDate>
+      
+      <guid>https://yourwebsitenamegoeshere.com/categories/cli/</guid>
+      <description></description>
+    </item><item>
+      <title>Shell</title>
+      <link>https://yourwebsitenamegoeshere.com/categories/shell/</link>
+      <pubDate>Mon, 02 Mar 2020 14:33:42 -0400</pubDate>
+      
+      <guid>https://yourwebsitenamegoeshere.com/categories/shell/</guid>
+      <description></description>
+    </item><item>
+      <title>The Linux Command Line</title>
+      <link>https://yourwebsitenamegoeshere.com/categories/the-linux-command-line/</link>
+      <pubDate>Mon, 02 Mar 2020 14:33:42 -0400</pubDate>
+      
+      <guid>https://yourwebsitenamegoeshere.com/categories/the-linux-command-line/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

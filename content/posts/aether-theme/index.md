@@ -2,11 +2,11 @@
 title: "Raphael | Code Insights"
 date: 2018-05-02T14:33:42-04:00
 description: " LOREM IMPSUM."
-categories: ["Web"]
+categories: [Bash"]
 dropCap: true
 displayInMenu: false
-displayInList: true
-draft: false
+displayInList: false
+draft: true
 resources:
 - name: featuredImage
   src: "mdd-macbook.jpg"
