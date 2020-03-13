@@ -18,8 +18,10 @@ Topics in deal with:
 - English at the office and writing reports.
 - Linux
 - Continuous Integration
--  Docker containers
+- Docker containers
 - Schematics
 - Basic circuit theory
 - Gitlab
 - Clean code
+- Shell
+- Org-mode

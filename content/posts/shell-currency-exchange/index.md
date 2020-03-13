@@ -14,6 +14,8 @@ resources:
   params:
     description: "A bunch of gold euro coins. A bunch of it."
 ---
+<h2 style="color: black;"><i>"Happiness is only real when shared."</i></h2>
+<h4 style="color: gray;">Christopher McCandless</h4>
 
 ## [Shell Currency Exchange](https://github.com/RaphaelSilv/shell-currency-exchange)
 
@@ -51,7 +53,7 @@ Inside =shell-currency= you can find =currency.sh= make sure to provide
 execution rights through  [chmod](https://linux.die.net/man/1/chmod) command for it.
 
 The last step is to add the absolute path to the file above to your environment
-variables. If you use =zsh= or =bash= open your terminal, go to home and open =.bashrc or .zrsch=
+variables. If you use `zsh` or `bash` open your terminal, go to home and open =.bashrc or .zrsch=
 with you favorite text editor and create an [alias](https://shapeshed.com/unix-alias/) as the following:
 
 ```bash
@@ -60,7 +62,7 @@ with you favorite text editor and create an [alias](https://shapeshed.com/unix-a
 
 Close the terminal and open it again.
 
-Now the try following command: =curr -f usd -t brl -a 1=
+Now the try following command: `curr -f usd -t brl -a 1`
 
 should produce an output similarly like so:
 
