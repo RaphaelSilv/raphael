@@ -2,7 +2,7 @@
 title: "C++ practice | Searching for atomic palindromes in any given file"
 date: 2020-04-11T00:04:28-03:00
 description: ""
-categories: [c++]
+categories: [c++, algorithms]
 dropCap: true
 displayInMenu: false
 displayInList: true

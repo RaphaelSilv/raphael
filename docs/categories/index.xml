@@ -10,11 +10,25 @@
         <atom:link href="https://raphaelsilv.github.io/raphael/categories/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>algorithms</title>
+      <link>https://raphaelsilv.github.io/raphael/categories/algorithms/</link>
+      <pubDate>Sat, 11 Apr 2020 00:04:28 -0300</pubDate>
+      
+      <guid>https://raphaelsilv.github.io/raphael/categories/algorithms/</guid>
+      <description></description>
+    </item><item>
       <title>c&#43;&#43;</title>
       <link>https://raphaelsilv.github.io/raphael/categories/c&#43;&#43;/</link>
       <pubDate>Sat, 11 Apr 2020 00:04:28 -0300</pubDate>
       
       <guid>https://raphaelsilv.github.io/raphael/categories/c&#43;&#43;/</guid>
+      <description></description>
+    </item><item>
+      <title>Bash</title>
+      <link>https://raphaelsilv.github.io/raphael/categories/bash/</link>
+      <pubDate>Mon, 02 Mar 2020 14:33:42 -0400</pubDate>
+      
+      <guid>https://raphaelsilv.github.io/raphael/categories/bash/</guid>
       <description></description>
     </item>
   </channel>

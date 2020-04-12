@@ -1,8 +1,8 @@
 ---
 title: "Bash | Consuming API exchange"
 date: 2020-03-02T14:33:42-04:00
-description: "Shell-currency provide you curerncy conversion simple and fast as any shell --command and faster than any browser loading."
-tags: ["Bash", "CLI", "Shell", "The Linux Command Line", "A complete introduction"]
+description: ""
+categories: ["Bash"]
 dropCap: true
 toc: false
 displayInMenu: false
@@ -14,7 +14,7 @@ resources:
   params:
     description: "A bunch of gold euro coins. A bunch of it."
 ---
-<h5 style="color: gray" align="center">Photo by <a style="color: gray"  href="https://pixabay.com/users/image4you-2459255/"><u>Image4you</u></a> on <a style="color: gray" href="https://pixabay.com/"><u>Pixabay</u><a/></h5>
+<h5 style="color: gray" align="center"><a style="color: gray" href="https://pixabay.com/"><u>Pixabay</u><a/></h5>
 <h2 style="color: black;"><i>"Happiness is only real when shared."</i></h2>
 <h4 style="color: gray;">Christopher McCandless</h4>
 
