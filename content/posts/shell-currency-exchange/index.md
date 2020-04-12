@@ -14,6 +14,7 @@ resources:
   params:
     description: "A bunch of gold euro coins. A bunch of it."
 ---
+<h5 style="color: gray" align="center">Photo by <a style="color: gray"  href="https://pixabay.com/users/image4you-2459255/"><u>Image4you</u></a> on <a style="color: gray" href="https://pixabay.com/"><u>Pixabay</u><a/></h5>
 <h2 style="color: black;"><i>"Happiness is only real when shared."</i></h2>
 <h4 style="color: gray;">Christopher McCandless</h4>
 

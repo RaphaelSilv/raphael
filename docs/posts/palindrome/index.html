@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="The language code for the language the website is written in" dir="ltr">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>C&#43;&#43; practice | Searching for atomic palindromes in any given file &middot; Raphael Ramos | Code Insights</title>
+  <meta name="description" content="" />
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  
+  
+  
+  
+  
+  <link href="https://raphaelsilv.github.io/raphael/css/concated.min.css" rel="stylesheet">
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'Your google analytics tracking ID - optional', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+  <style>
+    body {
+      background: #ecedef url("https://raphaelsilv.github.io/raphael/img/ignasi_pattern_s.png") repeat;
+    }
+  </style>
+</head>
+
+  <body class="single-body">
+    <nav class="nav-bar side-padding">
+  <h1 class="nav-header"><a href="https://raphaelsilv.github.io/raphael/" class="nav-text">By: Raphael Ramos</a></h1>
+  <div class="hamburger-menu">
+    <button onclick="hamburgerMenuPressed.call(this)" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+      <span></span>
+      <span></span>
+    </button>
+    <ul id="menu" class="hamburger-menu-overlay">
+      <li><a href="https://raphaelsilv.github.io/raphael/" class="hamburger-menu-overlay-link">Home</a></li>
+      <li><a href="https://raphaelsilv.github.io/raphael/about/" class="hamburger-menu-overlay-link">About Me</a></li>
+      
+      <li><a href="https://raphaelsilv.github.io/raphael/categories/c&#43;&#43;/" class="hamburger-menu-overlay-link">c&#43;&#43;</a></li>
+      
+      
+    </ul>
+  </div>
+</nav>
+
+    <main class="content side-text-padding">
+      <article class="post dropcase">
+        <header class="post-header">
+          <h1 class="post-title">C&#43;&#43; practice | Searching for atomic palindromes in any given file</h1>
+          <p class="post-date">Posted <time datetime="2020-04-11">Apr 11, 2020</time></p>
+        </header>
+        <picture class="post-figure">
+          
+          
+          <source srcset="https://raphaelsilv.github.io/raphael/posts/palindrome/woodtype_hud293e6b21876eb965a5d184c870a738a_417943_800x0_resize_q75_lanczos.jpg">
+          <img src="https://raphaelsilv.github.io/raphael/posts/palindrome/woodtype_hud293e6b21876eb965a5d184c870a738a_417943_800x0_resize_q75_lanczos.jpg" alt="A woodytpe printing font. I would say, different shapes of letters carved on wood.">
+        </picture>
+        
+        <h5 style="color: gray" align="center"><a style="color: gray" href="https://pixabay.com/images/search/word/"><u>Pixabay</u><a/></h5>
+<h2 style="color: black;"><i>"The best is the enemy of the good."</i></h2>
+<h4 style="color: gray;">Voltaire</h4>
+<h2 id="palindrome-hunterhttpsgithubcomraphaelsilvshell-currency-exchange"><a href="https://github.com/RaphaelSilv/shell-currency-exchange">palindrome-hunter</a></h2>
+<p>The best way to learn something new is arguably controversial, but nobody can
+sincerely deny that by doing and repetition is one of the most effectives ways
+to achieve such objective!</p>
+<p>Expose yourself to information through reading, is good but wouldn&rsquo;t be enough to retrieve
+information in the long term memory.</p>
+<p>That said, build
+<a href="https://github.com/RaphaelSilv/shell-currency-exchange">palindrome-hunter</a> was
+my way to develop a better understanding of <em>c++</em> and <em>core programming concepts</em>.</p>
+<h1 id="what-is-a-palindrome">What is a palindrome?</h1>
+<blockquote>
+<p>A palindrome is a word, number, phrase, or other sequence of characters which reads the same backward as forward.</p>
+</blockquote>
+<h5 style="color: gray" align="left"><a style="color: gray" href="https://en.wikipedia.org/wiki/Palindrome"><u>Wikipedia</u><a/></h5>
+<h3 id="but-what-is-an-atomic-palindrome">But, what is an atomic palindrome?</h3>
+<p>Here goes a practical example:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">Atomic palindrome example: <span style="color:#e6db74">&#34;civic&#34;</span>
+
+!Atomic palindrome example: <span style="color:#e6db74">&#34;A nut for a jar of tuna&#34;</span>
+</code></pre></div><h3 id="hey-permuted-what">Hey, permuted what?</h3>
+<p>A permutation is a rearrangement of characters which make possible <em>&ldquo;aab&rdquo;</em> becomes the palindrome: <em>&ldquo;aba&rdquo;</em>.
+Every palindrome is also a permuted palindrome, but the opposite isn&rsquo;t true.</p>
+<h3 id="runnin-it">Runnin&rsquo; it</h3>
+<p>In the main function specify the <code>txt</code> file name properly placed at <code>artifacts</code> folder
+when instantiate a <em>palindrome</em> object like so:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;src/palindrome.h&#34;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(<span style="color:#66d9ef">int</span> argc, <span style="color:#66d9ef">char</span> <span style="color:#66d9ef">const</span> <span style="color:#f92672">*</span>argv[]) {
+
+  Palindrome palindrome <span style="color:#f92672">=</span> { <span style="color:#e6db74">&#34;the-tragedy-of-hamlet-by-w-shakspeare.txt&#34;</span> };
+  palindrome.readWordsFromFile();
+}
+</code></pre></div><blockquote>
+<p><em>&ldquo;Run Forest, run!&quot;</em></p>
+</blockquote>
+<h5 style="color: gray;">Forrest Gump (1994)</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++">g<span style="color:#f92672">++</span> src<span style="color:#f92672">/</span>palindrome.cpp main.cpp <span style="color:#f92672">-</span>o <span style="color:#f92672">&lt;</span>output file name<span style="color:#f92672">&gt;</span>
+</code></pre></div><p>The expected output:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp">did is The Permuted Palindrome <span style="color:#ae81ff">435</span>
+too is The Permuted Palindrome <span style="color:#ae81ff">436</span>
+bee is The Permuted Palindrome <span style="color:#ae81ff">437</span>
+offendendo is The Permuted Palindrome <span style="color:#ae81ff">438</span>
+bee is The Permuted Palindrome <span style="color:#ae81ff">439</span>
+hee is The Permuted Palindrome <span style="color:#ae81ff">440</span>
+</code></pre></div><h1 id="implementation-details">Implementation details</h1>
+<h2 id="public-interface">Public interface</h2>
+<p>Besides the main function <code>void Palindrome::readWordsFromFile()</code>, the Palindrome
+object provides facilities implemented to make it&rsquo;s functionality possible.
+They are:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Palindrome</span> {
+<span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+  <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Exception</span> {};
+  Palindrome(std<span style="color:#f92672">::</span>string);
+  <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">removeSpecialCharsFromString</span>(std<span style="color:#f92672">::</span>string<span style="color:#f92672">&amp;</span>);
+  <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">readWordsFromFile</span>();
+  <span style="color:#66d9ef">bool</span> <span style="color:#a6e22e">isPalindrome</span>(std<span style="color:#f92672">::</span>string);
+  <span style="color:#66d9ef">bool</span> <span style="color:#a6e22e">isPermutedPalindrome</span>(std<span style="color:#f92672">::</span>string);
+  <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">toLowerCase</span>(std<span style="color:#f92672">::</span>string<span style="color:#f92672">&amp;</span>);
+  <span style="color:#66d9ef">inline</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">getNumPalindromes</span>() {
+    <span style="color:#66d9ef">return</span> numPalindromes;
+}
+ <span style="color:#66d9ef">inline</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">getNumPermutedPalindromes</span>() {
+    <span style="color:#66d9ef">return</span> numPermutedPalindromes;
+  }
+
+  <span style="color:#f92672">~</span>Palindrome();
+
+</code></pre></div><h2 id="algorithms">Algorithms</h2>
+<p>I will cover the most challenging function, it is:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">bool</span> <span style="color:#a6e22e">isPermutedPalindrome</span>(std<span style="color:#f92672">::</span>string str);
+</code></pre></div><p>Probably the most known method to find a palindrome permutation is through brute
+force. It consists of generate every possible permutation and check if it is a palindrome.
+But it is not the most effective solution. Usually this algorithm requires
+<code>recursion</code> and you should know how expensive it is. Use it only when you have to.</p>
+<p>The way I chose to solve that problem was by first:</p>
+<ul>
+<li>identifying the palindrome properties:</li>
+</ul>
+<p><code>if</code> a given word is composed by a odd number o characters each one of them <code>minus 1</code> must occur a even number of time;
+for instance: <code>madam -&gt; [m,m] + [a,a] minus [d]</code></p>
+<p><code>else if</code> the given word is composed by an even number of characters each one of them must to occur a even number of time;
+for instance: <code>noon</code> -&gt; <code>[n.n]</code> + <code>[o,o]</code></p>
+<p>Remember <em>&ldquo;Every permuted palindrome is a palindrome.&quot;</em></p>
+<ul>
+<li>Put it into code!</li>
+</ul>
+<p>For that I rely on c++ container <a href="http://www.cplusplus.com/reference/set/set/"><code>set</code></a>
+Fortunately, this type of container only allows unique elements in it.
+Well, the rest of the job was easy-peasy.
+Given a <code>str</code> string I verify the number of characters it has. If it&rsquo;s an odd number we know the <em>&rdquo; even number of repeated characters minus 1;&quot;</em>.</p>
+<p>We can use a flag variable <code>limit</code> to help us store this information:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp">  <span style="color:#66d9ef">if</span> (str.length() <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) {
+    limit <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+  } <span style="color:#66d9ef">else</span> {
+    limit <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+  }
+</code></pre></div><p>Iterating <code>str</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp">
+ std<span style="color:#f92672">::</span>set<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">char</span><span style="color:#f92672">&gt;</span> mySet;
+
+ ...
+
+  <span style="color:#66d9ef">for</span> (size_t i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> str.length(); i<span style="color:#f92672">++</span>) {
+    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>mySet.insert(str.at(i)).second) {
+      mySet.erase(str.at(i));
+    }
+  }
+</code></pre></div><p>For each character in <code>str</code> I call <code>insert</code> and with <code>second</code> I verify if the element already exists.
+Simple logic:</p>
+<p><code>if</code> the element do not exists yet, insert it.
+<code>else if</code> it already exists remove it&rsquo;s occurrence with <code>erase</code>.</p>
+<p>The return type is a boolean statement with simple comparison:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp">  <span style="color:#66d9ef">return</span> limit <span style="color:#f92672">==</span> mySet.size();
+</code></pre></div><p>That&rsquo;s all folks, hope you have enjoyed. Take care.</p>
+<h1 id="references">References:</h1>
+<ul>
+<li>Chapter 9 of Programming Principles and Practice Using C++ 2 ed.- by Bjarne Stroustrup.</li>
+</ul>
+
+      </article>
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "basquiatraphaeu" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </main>
+    <nav class="end-nav side-padding">
+      
+      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
+  href="https://raphaelsilv.github.io/raphael/posts/shell-currency-exchange/" class="card blog-card" rel="bookmark" >
+  
+  <div class="card-img-container">
+    <p class="card-img-overlay">Next Article</p>
+    <picture>
+      
+      <source srcset="https://raphaelsilv.github.io/raphael/posts/shell-currency-exchange/mdd-coins.jpg">
+      <img src="https://raphaelsilv.github.io/raphael/posts/shell-currency-exchange/mdd-coins.jpg" class="card-img" alt="A bunch of gold euro coins. A bunch of it.">
+    </picture>
+  </div>
+  
+  <article class="card-body">
+    <h2 class="card-title">Bash | Consuming API exchange</h2>
+    <p class="card-text">Shell-currency provide you curerncy conversion simple and fast as any shell --command and faster than any browser loading.</p>
+    <div class="card-subtext muted-text">
+      <p>Posted <time datetime="2020-03-02 32:00">Mar 2, 2020</time></p>
+      
+    </div>
+  </article>
+</a>
+      
+      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
+  href="https://raphaelsilv.github.io/raphael/" class="card home-card" style="background-image: url( https://raphaelsilv.github.io/raphael/img/fancy-pants.jpg )" rel="bookmark" >
+  Home
+</a>
+    </nav>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+  
+  <script src="https://raphaelsilv.github.io/raphael/js/core.min.js"></script>
+
+  </body>
+</html>

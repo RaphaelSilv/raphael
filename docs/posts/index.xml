@@ -5,11 +5,18 @@
     <description>Recent content in Posts on Raphael Ramos | Code Insights</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>The language code for the language the website is written in</language>
-    <lastBuildDate>Mon, 02 Mar 2020 14:33:42 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 11 Apr 2020 00:04:28 -0300</lastBuildDate>
     
         <atom:link href="https://raphaelsilv.github.io/raphael/posts/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>C&#43;&#43; practice | Searching for atomic palindromes in any given file</title>
+      <link>https://raphaelsilv.github.io/raphael/posts/palindrome/</link>
+      <pubDate>Sat, 11 Apr 2020 00:04:28 -0300</pubDate>
+      
+      <guid>https://raphaelsilv.github.io/raphael/posts/palindrome/</guid>
+      <description></description>
+    </item><item>
       <title>Bash | Consuming API exchange</title>
       <link>https://raphaelsilv.github.io/raphael/posts/shell-currency-exchange/</link>
       <pubDate>Mon, 02 Mar 2020 14:33:42 -0400</pubDate>
