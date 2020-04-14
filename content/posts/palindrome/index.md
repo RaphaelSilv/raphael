@@ -17,16 +17,16 @@ resources:
 <h2 style="color: black;"><i>"The best is the enemy of the good."</i></h2>
 <h4 style="color: gray;">Voltaire</h4>
 
-## [palindrome-hunter](https://github.com/RaphaelSilv/shell-currency-exchange)
+## [palindrome-hunter](https://github.com/RaphaelSilv/palindrome-hunter)
 The best way to learn something new is arguably controversial, but nobody can
-sincerely deny that by doing and repetition is one of the most effectives ways
+honestly disagree that by doing and through repetition is one of the most effectives ways
 to achieve such objective!
 
-Expose yourself to information through reading, is good but wouldn't be enough to retrieve
+Expose yourself to information through reading is good, but wouldn't be enough to retrieve
 information in the long term memory.
 
 That said, build
-[palindrome-hunter](https://github.com/RaphaelSilv/shell-currency-exchange) was
+[palindrome-hunter](https://github.com/RaphaelSilv/palindrome-hunter) was
 my way to develop a better understanding of *c++* and *core programming concepts*.
 
 # What is a palindrome?
@@ -83,7 +83,7 @@ hee is The Permuted Palindrome 440
 # Implementation details
 ## Public interface
 
-Besides the main function `void Palindrome::readWordsFromFile()`, the Palindrome
+Besides the main function `void Palindrome::readWordsFromFile()` the Palindrome
 object provides facilities implemented to make it's functionality possible.
 They are:
 
@@ -109,14 +109,14 @@ public:
 ```
 ## Algorithms
 
-I will cover the most challenging function, it is:
+I will cover the most challenging function it is:
 
 ```cpp
 bool isPermutedPalindrome(std::string str);
 ```
 
 Probably the most known method to find a palindrome permutation is through brute
-force. It consists of generate every possible permutation and check if it is a palindrome.
+force. It consists of generate every possible permutation and check if it is a palindrome or not.
 But it is not the most effective solution. Usually this algorithm requires
 `recursion` and you should know how expensive it is. Use it only when you have to.
 
@@ -133,18 +133,18 @@ The way I chose to solve that problem was by first:
 
 * Put it into code!
 
-For that I rely on c++ container <a href="http://www.cplusplus.com/reference/set/set/"><code>set</code></a>
+For that I rely on c++ container <a href="http://www.cplusplus.com/reference/set/set/"><code>set</code></a>.
 Fortunately, this type of container only allows unique elements in it.
 Well, the rest of the job was easy-peasy.
-Given a `str` string I verify the number of characters it has. If it's an odd number we know the *" even number of repeated characters minus 1;"*.
+Given a `str` string I verify the number of characters it has. If it's an odd number we know the *" even number of repeated characters minus 1;"* rule.
 
-We can use a flag variable `limit` to help us store this information:
+We can use a flag variable `charRemaining` to help us store this information:
 
 ```cpp
   if (str.length() % 2 == 0) {
-    limit = 0;
+    charRemaining = 0;
   } else {
-    limit = 1;
+    charRemaining = 1;
   }
 ```
 
@@ -172,11 +172,11 @@ Simple logic:
 The return type is a boolean statement with simple comparison:
 
 ```cpp
-  return limit == mySet.size();
+  return charRemaining == mySet.size();
 ```
 
 That's all folks, hope you have enjoyed. Take care.
 
 # References:
 
-* Chapter 9 of Programming Principles and Practice Using C++ 2 ed.- by Bjarne Stroustrup.
+* Programming Principles and Practice Using C++ 2 ed.- by Bjarne Stroustrup.

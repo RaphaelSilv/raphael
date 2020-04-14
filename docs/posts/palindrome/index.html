@@ -78,14 +78,14 @@ if (!doNotTrack) {
         <h5 style="color: gray" align="center"><a style="color: gray" href="https://pixabay.com/images/search/word/"><u>Pixabay</u><a/></h5>
 <h2 style="color: black;"><i>"The best is the enemy of the good."</i></h2>
 <h4 style="color: gray;">Voltaire</h4>
-<h2 id="palindrome-hunterhttpsgithubcomraphaelsilvshell-currency-exchange"><a href="https://github.com/RaphaelSilv/shell-currency-exchange">palindrome-hunter</a></h2>
+<h2 id="palindrome-hunterhttpsgithubcomraphaelsilvpalindrome-hunter"><a href="https://github.com/RaphaelSilv/palindrome-hunter">palindrome-hunter</a></h2>
 <p>The best way to learn something new is arguably controversial, but nobody can
-sincerely deny that by doing and repetition is one of the most effectives ways
+honestly disagree that by doing and through repetition is one of the most effectives ways
 to achieve such objective!</p>
-<p>Expose yourself to information through reading, is good but wouldn&rsquo;t be enough to retrieve
+<p>Expose yourself to information through reading is good, but wouldn&rsquo;t be enough to retrieve
 information in the long term memory.</p>
 <p>That said, build
-<a href="https://github.com/RaphaelSilv/shell-currency-exchange">palindrome-hunter</a> was
+<a href="https://github.com/RaphaelSilv/palindrome-hunter">palindrome-hunter</a> was
 my way to develop a better understanding of <em>c++</em> and <em>core programming concepts</em>.</p>
 <h1 id="what-is-a-palindrome">What is a palindrome?</h1>
 <blockquote>
@@ -124,7 +124,7 @@ bee is The Permuted Palindrome <span style="color:#ae81ff">439</span>
 hee is The Permuted Palindrome <span style="color:#ae81ff">440</span>
 </code></pre></div><h1 id="implementation-details">Implementation details</h1>
 <h2 id="public-interface">Public interface</h2>
-<p>Besides the main function <code>void Palindrome::readWordsFromFile()</code>, the Palindrome
+<p>Besides the main function <code>void Palindrome::readWordsFromFile()</code> the Palindrome
 object provides facilities implemented to make it&rsquo;s functionality possible.
 They are:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Palindrome</span> {
@@ -146,10 +146,10 @@ They are:</p>
   <span style="color:#f92672">~</span>Palindrome();
 
 </code></pre></div><h2 id="algorithms">Algorithms</h2>
-<p>I will cover the most challenging function, it is:</p>
+<p>I will cover the most challenging function it is:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">bool</span> <span style="color:#a6e22e">isPermutedPalindrome</span>(std<span style="color:#f92672">::</span>string str);
 </code></pre></div><p>Probably the most known method to find a palindrome permutation is through brute
-force. It consists of generate every possible permutation and check if it is a palindrome.
+force. It consists of generate every possible permutation and check if it is a palindrome or not.
 But it is not the most effective solution. Usually this algorithm requires
 <code>recursion</code> and you should know how expensive it is. Use it only when you have to.</p>
 <p>The way I chose to solve that problem was by first:</p>
@@ -164,15 +164,15 @@ for instance: <code>noon</code> -&gt; <code>[n.n]</code> + <code>[o,o]</code></p
 <ul>
 <li>Put it into code!</li>
 </ul>
-<p>For that I rely on c++ container <a href="http://www.cplusplus.com/reference/set/set/"><code>set</code></a>
+<p>For that I rely on c++ container <a href="http://www.cplusplus.com/reference/set/set/"><code>set</code></a>.
 Fortunately, this type of container only allows unique elements in it.
 Well, the rest of the job was easy-peasy.
-Given a <code>str</code> string I verify the number of characters it has. If it&rsquo;s an odd number we know the <em>&rdquo; even number of repeated characters minus 1;&quot;</em>.</p>
-<p>We can use a flag variable <code>limit</code> to help us store this information:</p>
+Given a <code>str</code> string I verify the number of characters it has. If it&rsquo;s an odd number we know the <em>&rdquo; even number of repeated characters minus 1;&quot;</em> rule.</p>
+<p>We can use a flag variable <code>charRemaining</code> to help us store this information:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp">  <span style="color:#66d9ef">if</span> (str.length() <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) {
-    limit <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+    charRemaining <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
   } <span style="color:#66d9ef">else</span> {
-    limit <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+    charRemaining <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
   }
 </code></pre></div><p>Iterating <code>str</code>:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp">
@@ -190,11 +190,11 @@ Simple logic:</p>
 <p><code>if</code> the element do not exists yet, insert it.
 <code>else if</code> it already exists remove it&rsquo;s occurrence with <code>erase</code>.</p>
 <p>The return type is a boolean statement with simple comparison:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp">  <span style="color:#66d9ef">return</span> limit <span style="color:#f92672">==</span> mySet.size();
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp">  <span style="color:#66d9ef">return</span> charRemaining <span style="color:#f92672">==</span> mySet.size();
 </code></pre></div><p>That&rsquo;s all folks, hope you have enjoyed. Take care.</p>
 <h1 id="references">References:</h1>
 <ul>
-<li>Chapter 9 of Programming Principles and Practice Using C++ 2 ed.- by Bjarne Stroustrup.</li>
+<li>Programming Principles and Practice Using C++ 2 ed.- by Bjarne Stroustrup.</li>
 </ul>
 
       </article>
